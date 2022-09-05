@@ -1,0 +1,42 @@
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 这里需要注意的是，整个外框的宽度是280px，而它有存在左右内边距各15px，这时需要设置box-sizing:border-box; */
+/* 如果不设置box-sizing，外框总长将变成 280 + 15 * 2 = 310px */
+.box {
+  box-sizing: border-box;
+  width: 280px;
+  box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 7px;
+}
+
+.box .title {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+  text-align: center;
+}
+
+.box p {
+  font-size: 12px;
+  color: #2c2c2c;
+  padding-top: 15px;
+}
+.a{
+	padding: 20px;
+}
+.dv{
+	position: fixed;
+	/* 通过设置top、left、margin-top、margin-left使模态框处于页面正中 */
+	top: 50%;
+	left: 50%;
+	margin-left: -245px;
+	margin-top: -201.5px;
+	width: 490px;
+	height: 403px;
+	border-radius: 16px;
+	background-color: black;
+}	
